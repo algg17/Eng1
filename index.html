@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Present Simple Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Present Simple – Mini Test</h1>
+
+  <form id="quiz-form">
+    <div class="question">
+      <p>1. She ___ to school every day.</p>
+      <label><input type="radio" name="q1" value="go"> go</label>
+      <label><input type="radio" name="q1" value="goes"> goes</label>
+      <label><input type="radio" name="q1" value="gone"> gone</label>
+    </div>
+
+    <div class="question">
+      <p>2. I ___ coffee in the morning.</p>
+      <label><input type="radio" name="q2" value="drinks"> drinks</label>
+      <label><input type="radio" name="q2" value="drink"> drink</label>
+      <label><input type="radio" name="q2" value="drunk"> drunk</label>
+    </div>
+
+    <div class="question">
+      <p>3. Do they ___ football on Sundays?</p>
+      <label><input type="radio" name="q3" value="playing"> playing</label>
+      <label><input type="radio" name="q3" value="plays"> plays</label>
+      <label><input type="radio" name="q3" value="play"> play</label>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Check Answers</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
