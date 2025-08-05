@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>English Tests</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-graduation-cap"></i> English Practice</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2><i class="fas fa-play-circle"></i> Present Progressive Test</h2>
+      <p>10 grammar questions to test your skills.</p>
+      <button onclick="startTest()">Start Test</button>
+    </div>
+	 <div class="card">
+      <h2><i class="fas fa-play-circle"></i> Present Simple Test</h2>
+      <p>10 grammar questions to test your skills.</p>
+      <button onclick="startTest2()">Start Test</button>
+    </div>
+    <div class="card">
+      <h2><i class="fas fa-chart-line"></i> Your Last Score</h2>
+      <p id="lastScore">Loading...</p>
+    </div>
+  </main>
+
+  <script>
+    function startTest() {
+      window.location.href = 'test.html';
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      const score = localStorage.getItem("lastScore");
+      document.getElementById("lastScore").innerText = score ? score : "No attempts yet.";
+    });
+	
+	function startTest2() {
+      window.location.href = 'test2.html';
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      const score2 = localStorage.getItem("lastScore2");
+      document.getElementById("lastScore").innerText = score ? score : "No attempts yet.";
+    });
+  </script>
+</body>
+</html>
